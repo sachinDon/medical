@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#002542</color>
+    <color name="colorPrimaryDark">#002542</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorgreenblack">#001B45</color>
+    <color name="colorwhite">#ffffff</color>
+    <color name="colorblue">#A8EB12</color>
+    <color name="signupColor">#066e8a</color>
+    <color name="colororange">#ABFF02</color>
+    <color name="colortab">#3498DB</color>
+    <color name="colorlightgray">#969797</color>
+    <color name="colorlightgray1">#e6dcdcdc</color>
+    <color name="colorlightgray2">#c4c4c4</color>
+    <color name="colorpink">#ff00bb</color>
+    <color name="transperent">#05000000</color>
+    <color name="colorblack">#000000</color>
+    <color name="colorblue1">#27aaab</color>
+    <color name="colorgreen">#7ccf00</color>
+    <color name="colorgreen1">#00a400</color>
+    <color name="colorred">#ff0000</color>
+    <color name="colordarkblue">#1900bc</color>
+    <color name="coloryellow">#ffaa00</color>
+    <color name="coloryellow1">#ffce6b</color>
+    <color name="colorshadedblue">#00213a</color>
+    <color name="colorshadedblue1">#66bdff</color>
+    <color name="colorwhite1">#f9f9f9</color>
+    <color name="grouptablevicecolor">#fbe1e1e1</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_trans">#88FFFFFF</color>
+    <color name="send_otp_blue">#156BB3</color>
+    <color name="send_otp_blue_dark">#06599e</color>
+    <color name="sendotp_grey">#636363</color>
+    <color name="sendotp_medium_grey">#B0B0B0</color>
+    <color name="sendotp_light_grey">#D9D9D9</color>
+
+</resources>

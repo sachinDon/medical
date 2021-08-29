@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/cutom_dilaog_invited2_loc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/roundwhite"
+        >
+
+
+        <TextView
+            android:id="@+id/textview_alert_invite_title_loc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorred"
+            android:text="Opps!"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/textview_alert_invite_message_loc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:gravity="center"
+            android:textColor="@color/colorblack"
+            android:fontFamily="@font/sanfranciscodisplay_medium"
+            android:layout_below="@+id/textview_alert_invite_title_loc"
+            android:text="Your pincode does not match, Please click bellow valid area pincode"
+            />
+
+        <EditText
+            android:id="@+id/textview_emailtext_loc"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:textSize="18dp"
+            android:visibility="invisible"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:textStyle="normal"
+            android:maxLines="1"
+            android:inputType="text|textNoSuggestions"
+            android:layout_below="@+id/textview_alert_invite_message_loc"
+            android:hint="Enter Mobile number"
+            android:background="@drawable/blackline_border"/>
+
+        <TextView
+            android:id="@+id/textview_alert_topborder_loc"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:layout_below="@+id/textview_emailtext_loc"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="@color/colorlightgray"
+            />
+
+        <TextView
+            android:id="@+id/textview_alert_hzborder_loc"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:layout_alignTop="@+id/textview_alert_topborder_loc"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorlightgray"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/textview_alert_msg_cancel_loc"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignRight="@+id/textview_alert_hzborder_loc"
+            android:layout_alignTop="@+id/textview_alert_topborder_loc"
+
+            android:gravity="center"
+            android:text="Cancel"
+            android:textColor="@color/colorred"
+            android:textSize="16dp"
+            android:fontFamily="@font/sanfranciscodisplay_medium" />
+
+        <TextView
+            android:id="@+id/textview_alert_msg_ok_loc"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignRight="@+id/textview_emailtext_loc"
+            android:layout_alignTop="@+id/textview_alert_topborder_loc"
+           android:layout_toEndOf="@+id/textview_alert_hzborder_loc"
+            android:gravity="center"
+            android:text="Valid Pincode"
+            android:textColor="@color/colorgreen1"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,155 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorshadedblue"
+    tools:context="info.wkweb.com.medical.MoreFragment">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorshadedblue">
+ <LinearLayout
+     android:id="@+id/linear_moretab"
+     android:layout_width="match_parent"
+     android:layout_height="45dp"
+     android:orientation="horizontal"
+     android:weightSum="2">
+
+     <RelativeLayout
+         android:id="@+id/relative_history_tab"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:background="@color/colortab"
+         android:layout_weight="1">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             android:text="History"
+             android:textSize="17sp"
+             android:fontFamily="@font/sanfranciscodisplay_semibold"
+             android:textColor="@color/colorwhite"/>
+
+     </RelativeLayout>
+     <RelativeLayout
+         android:id="@+id/relative_about_tab"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:background="@color/colorblack"
+         android:layout_weight="1">
+
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             android:text="About Us"
+             android:textSize="17sp"
+             android:fontFamily="@font/sanfranciscodisplay_semibold"
+             android:textColor="@color/colorwhite"/>
+
+     </RelativeLayout>
+
+
+ </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorshadedblue"
+        android:layout_below="@+id/linear_moretab"
+        >
+
+        <SearchView
+            android:id="@+id/searchView_his"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/relative_newoff_title"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:background="@color/colorwhite"
+            android:queryHint="Search Amount/Orderid"
+            android:iconifiedByDefault="false"
+            android:queryBackground="@color/colorwhite"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:closeIcon="@drawable/closes1"
+            android:searchIcon="@drawable/searches2"
+            />
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeToRefresh_his"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorshadedblue"
+            android:layout_below="@+id/searchView_his"
+           >
+        <ListView
+            android:id="@+id/listview_history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorshadedblue"/>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <TextView
+            android:id="@+id/text_result_hist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No History"
+            android:textColor="@color/colorwhite"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:fontFamily="@font/sanfranciscodisplay_bold"/>
+        <ProgressBar
+            android:id="@+id/progress_histab"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_aboutus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:background="@color/colorshadedblue"
+        android:layout_below="@+id/linear_moretab">
+
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/webView"
+            android:layout_below="@+id/progressBar1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:id="@+id/progressBar1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:maxHeight="5dip"
+            android:minHeight="5dip"
+            android:progressDrawable="@drawable/custom_pb"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+</FrameLayout>

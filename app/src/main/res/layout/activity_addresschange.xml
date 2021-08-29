@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorshadedblue"
+    tools:context="info.wkweb.com.medical.AddresschangeActivity">
+    <RelativeLayout
+        android:id="@+id/relative_address_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:id="@+id/text_title_addresss"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:text="Change Address"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:fontFamily="@font/sanfranciscodisplay_medium"
+            android:textColor="@color/colorwhite"
+            />
+
+        <TextView
+            android:id="@+id/text_back_addresss"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="40dp"
+            android:text="Back"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:fontFamily="@font/sanfranciscodisplay_medium"
+            android:textColor="@color/colorwhite"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_address_title">
+
+        <ScrollView
+            android:id="@+id/scrollView_myaddress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+<TextView
+    android:id="@+id/text_addchange_descip"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginStart="20dp"
+    android:textSize="13sp"
+    android:fontFamily="@font/sanfranciscodisplay_medium"
+    android:textColor="@color/colorlightgray"
+    android:gravity="center"
+    android:text="This is your account register details if you have changes those updated your register account details as name and address.\n Here you can only update your name and address name"/>
+
+
+                <EditText
+                    android:id="@+id/edit_addd_fullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:textSize="18dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center"
+                    android:textStyle="normal"
+                    android:maxLines="1"
+                    android:inputType="text|textNoSuggestions"
+                    android:hint="Full Name"
+                    android:layout_below="@+id/text_addchange_descip"
+                    android:background="@drawable/blackline_border"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/edit_adddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:maxLines="5"
+                    android:scrollbars="vertical"
+                    android:gravity="center"
+                    android:textStyle="normal"
+                    android:text=""
+                    android:paddingTop="4dp"
+                    android:paddingBottom="5dp"
+                    android:minHeight="45dp"
+                    android:inputType="textMultiLine|text|textNoSuggestions"
+                    android:layout_below="@+id/edit_addd_fullname"
+                    android:hint="Address1"
+                    android:background="@drawable/blackline_border"/>
+
+                <EditText
+                    android:id="@+id/edit_landmark_addd"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:textSize="18dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center"
+                    android:textStyle="normal"
+                    android:maxLines="1"
+                    android:inputType="text|textNoSuggestions"
+                    android:layout_below="@+id/edit_adddress"
+                    android:hint="Address2"
+                    android:background="@drawable/blackline_border"/>
+
+                <EditText
+                    android:id="@+id/edit_pncode_addd"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:textSize="18dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center"
+                    android:textStyle="normal"
+                    android:maxLines="1"
+                    android:inputType="numberDecimal"
+                    android:layout_below="@+id/edit_landmark_addd"
+                    android:hint="Pincode"
+                    android:background="@drawable/blackline_border"/>
+
+                <EditText
+                    android:id="@+id/edit_mobilenumber_addd"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:textSize="18dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center"
+                    android:textStyle="normal"
+                    android:maxLines="1"
+                    android:inputType="numberDecimal"
+                    android:layout_below="@+id/edit_pncode_addd"
+                    android:hint="Mobile No."
+                    android:background="@drawable/blackline_border"/>
+
+                <TextView
+                    android:id="@+id/text_addd_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_below="@+id/edit_mobilenumber_addd"
+                    android:text="Save"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/sanfranciscodisplay_medium"
+                    android:textColor="@color/colorwhite"
+                    android:background="@drawable/round_green1"
+                    android:layout_centerHorizontal="true"
+                    />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

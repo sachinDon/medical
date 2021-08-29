@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorshadedblue">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <EditText
+                android:id="@+id/otpcodetxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColorHint="@color/colorwhite"
+                android:backgroundTint="@color/colorwhite"
+                android:fontFamily="@font/sanfranciscodisplay_regular"
+                android:hint="Enter code"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textColor="@color/colorwhite"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/otpcodetxt"
+                android:layout_below="@+id/otpcodetxt"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/sanfranciscodisplay_regular"
+                android:gravity="center"
+                android:layout_toEndOf="@+id/otpcodetxt"
+                android:lineSpacingExtra="3sp"
+                android:layout_marginEnd="15dp"
+                android:text="Please enter verification code that you received on your mobile phone and then tap verify."
+                android:textColor="@color/colorwhite"
+                android:textSize="16sp" />
+
+
+            <Button
+                android:id="@+id/resend_btn1"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/otpcodetxt"
+                android:layout_below="@+id/text2"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/round_green1"
+                android:fontFamily="@font/sanfranciscodisplay_regular"
+                android:text="Resend"
+                android:textColor="@color/colorwhite"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/verifybtn"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/resend_btn1"
+                android:layout_alignBottom="@+id/resend_btn1"
+                android:layout_alignEnd="@+id/otpcodetxt"
+                android:layout_alignRight="@+id/otpcodetxt"
+                android:background="@drawable/round_white1"
+                android:fontFamily="@font/sanfranciscodisplay_regular"
+                android:text="verify"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="58dp"
+    android:id="@+id/bottom_tablayouts"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+
+    android:background="@color/colortab"
+    android:weightSum="6">
+
+    <RelativeLayout
+        android:id="@+id/realtive_home_tab"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+
+        >
+
+        <ImageView
+            android:id="@+id/img_home_tab"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/tab_home1"/>
+
+
+        <TextView
+            android:id="@+id/txt_home_tab"
+            android:layout_height="20dp"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:text="HOME"
+            android:textSize="10sp"
+            android:fontFamily="@font/sanfranciscodisplay_bold"
+            android:gravity="center"
+            android:textColor="@color/colororange"/>
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="@color/signupColor"
+            android:alpha="0.7"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/realtive_order_tab"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0">
+
+        <ImageView
+            android:id="@+id/img__order_tab"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/tab_order"/>
+
+
+        <TextView
+            android:id="@+id/txt__order_tab"
+            android:layout_height="20dp"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:text="ORDER"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:fontFamily="@font/sanfranciscodisplay_bold"
+            android:textColor="@color/colorwhite"/>
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="@color/signupColor"
+            android:alpha="0.7"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/realtive_cart_tab"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/img_cart_tab"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/tab_cart"/>
+
+
+        <TextView
+            android:id="@+id/txt_cart_tab"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:text="CART"
+            android:textColor="@color/colorwhite"
+            android:textSize="10sp"
+            android:fontFamily="@font/sanfranciscodisplay_bold"/>
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="@color/signupColor"
+            android:alpha="0.7"/>
+
+        <TextView
+            android:id="@+id/text_budge_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+
+            android:background="@drawable/budge"
+            android:gravity="center"
+            android:maxLines="1"
+            android:layout_marginTop="1dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingBottom="1dp"
+            android:paddingTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:text="0"
+            android:fontFamily="@font/sanfranciscodisplay_medium"
+            android:textColor="@color/colorwhite"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/realtive_profile_tab"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        >
+
+        <ImageView
+            android:id="@+id/img_profile_tab"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/tab_pro"/>
+
+
+        <TextView
+            android:id="@+id/txt_profile_tab"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:text="PROFILE"
+            android:textColor="@color/colorwhite"
+            android:textSize="10sp"
+            android:fontFamily="@font/sanfranciscodisplay_bold" />
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="@color/signupColor"
+            android:alpha="0.7"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/realtive_inq_tab"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        >
+
+
+
+        <ImageView
+            android:id="@+id/img_inq_tab"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/tab_inq"/>
+
+
+        <TextView
+            android:id="@+id/txt_inq_tab"
+            android:layout_height="20dp"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:text="INQUIRY"
+            android:textSize="10sp"
+            android:fontFamily="@font/sanfranciscodisplay_bold"
+            android:gravity="center"
+            android:textColor="@color/colorwhite"/>
+
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="@color/signupColor"
+            android:alpha="0.7"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/realtive_more_tab"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        >
+
+
+
+        <ImageView
+            android:id="@+id/img_more_tab"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/tab_more"/>
+
+
+        <TextView
+            android:id="@+id/txt_more_tab"
+            android:layout_height="20dp"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:text="More"
+            android:textSize="10sp"
+            android:fontFamily="@font/sanfranciscodisplay_bold"
+            android:gravity="center"
+            android:textColor="@color/colorwhite"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

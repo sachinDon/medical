@@ -1,0 +1,154 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorshadedblue"
+    tools:context="info.wkweb.com.medical.ProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_prof_head">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/profo_logo"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="25dp"
+                    android:text="S"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorwhite"
+                    android:textAllCaps="true"
+                    android:textSize="60sp"
+                    android:fontFamily="@font/sanfranciscodisplay_bold"
+                    android:background="@drawable/circle"
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:id="@+id/pro_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="5dp"
+                    android:textColor="@color/colorwhite"
+                    android:layout_below="@+id/profo_logo"
+                    android:text="Sakasham Mokashi"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/sanfranciscodisplay_semibold"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+                    android:id="@+id/pro_editprofile"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="35dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_below="@+id/pro_name"
+                    android:text="Edit Profile"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/sanfranciscodisplay_medium"
+                    android:textColor="@color/colorshadedblue"
+                    android:background="@drawable/round_white1"
+                    android:layout_centerHorizontal="true"
+                    />
+
+
+
+
+                <TextView
+                    android:id="@+id/pro_paymentdetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_below="@+id/pro_editprofile"
+                    android:text="Payment Details"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/sanfranciscodisplay_medium"
+                    android:textColor="@color/colorshadedblue"
+                    android:background="@drawable/round_white1"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+                    android:id="@+id/pro_Cahngepass"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_below="@+id/pro_paymentdetail"
+                    android:text="Change Password"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/sanfranciscodisplay_medium"
+                    android:textColor="@color/colorshadedblue"
+                    android:background="@drawable/round_white1"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+                    android:id="@+id/pro_DeleteAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_below="@+id/pro_Cahngepass"
+                    android:text="Logout"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/sanfranciscodisplay_medium"
+                    android:textColor="@color/colorred"
+                    android:background="@drawable/round_white1"
+                    android:layout_centerHorizontal="true"
+                    />
+
+
+                <TextView
+                    android:id="@+id/pro_dtailsapp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@+id/pro_DeleteAccount"
+                    android:text="Pritama Medicals 1.2.19"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/sanfranciscodisplay_regular"
+                    android:textColor="@color/colorlightgray"
+                    android:layout_centerHorizontal="true"
+                    />
+
+            </RelativeLayout>
+
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</FrameLayout>

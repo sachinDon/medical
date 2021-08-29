@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/backrounimage"
+    android:orientation="horizontal"
+    tools:context="info.wkweb.com.medical.MainActivity">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/relative_main_row1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/image_logos_mains"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/logopm"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/text_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WELCOME TO PRITAMA MEDICALS"
+        android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/image_logos_mains"
+        android:textSize="21sp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:gravity="center"
+        android:fontFamily="@font/sanfranciscodisplay_semibold"
+        android:textColor="@color/colorshadedblue"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_main_row1"
+        >
+
+        <ImageView
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_above="@+id/text_title_main_title"
+            android:background="@mipmap/backimage1"
+           />
+
+
+            <TextView
+
+                android:id="@+id/text_title_main_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EASY ORDER FASTER DELIVERY"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="4dp"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_above="@+id/text_line1"
+                android:fontFamily="@font/sanfranciscodisplay_semibold"
+                android:textColor="@color/colorshadedblue"/>
+
+            <TextView
+                android:id="@+id/text_line1"
+                android:layout_width="250dp"
+                android:layout_height="3dp"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@+id/text_line2"
+                android:layout_marginBottom="5dp"
+                android:background="@color/colorshadedblue"/>
+            <TextView
+                android:id="@+id/text_line2"
+                android:layout_width="150dp"
+                android:layout_height="3dp"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@+id/text_line3"
+                android:layout_marginBottom="5dp"
+                android:background="@color/colorshadedblue"/>
+
+            <TextView
+                android:id="@+id/text_line3"
+                android:layout_width="80dp"
+                android:layout_height="3dp"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@+id/relative_main_page"
+                android:layout_marginBottom="4dp"
+                android:background="@color/colorshadedblue"/>
+
+            <RelativeLayout
+                android:id="@+id/relative_main_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundedpink"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentBottom="true">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="LET'S GET STARTED"
+                    android:layout_toStartOf="@+id/text_main_playapp"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="21sp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:fontFamily="@font/sanfranciscodisplay_semibold"
+                    android:textColor="@color/colorwhite"/>
+
+                <TextView
+                    android:id="@+id/text_main_playapp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/play2"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

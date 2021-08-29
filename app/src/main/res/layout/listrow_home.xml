@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shadow"
+    android:layout_marginTop="2dp"
+
+    android:layout_marginBottom="4dp">
+
+    <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+        android:id="@+id/image_product"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:siShape="@drawable/shape_rounded_rectangle"
+        app:siSquare="true"
+        android:src="@drawable/default1"
+        />
+    <TextView
+        android:id="@+id/text_offer_per"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/sale3"
+        android:text="10%"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="center"
+        android:textColor="@color/colorwhite"
+        android:fontFamily="@font/sanfranciscodisplay_bold"
+        android:textSize="14sp"/>
+    <TextView
+        android:id="@+id/text_productname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/text_offer_per"
+        android:layout_marginEnd="2dp"
+        android:text="Detol liquid"
+        android:textSize="16sp"
+        android:textColor="@color/colorblack"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/sanfranciscodisplay_bold"
+        android:layout_toEndOf="@+id/image_product"/>
+
+    <TextView
+        android:id="@+id/text_mgfname_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:text="MFG:"
+        android:textSize="15sp"
+        android:textColor="@color/colorblack"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/text_productname"
+        android:fontFamily="@font/sanfranciscodisplay_medium"
+        android:layout_toEndOf="@+id/image_product"/>
+    <TextView
+        android:id="@+id/text_mgfname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Cipla"
+        android:textSize="14sp"
+        android:singleLine="true"
+        android:textColor="@color/colorblack"
+        android:layout_marginStart="5dp"
+        android:layout_below="@+id/text_productname"
+        android:fontFamily="@font/sanfranciscodisplay_medium"
+        android:layout_toEndOf="@+id/text_mgfname_title"/>
+
+<RelativeLayout
+    android:id="@+id/relative_mrp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="0dp"
+    android:layout_toEndOf="@+id/image_product"
+    android:layout_below="@+id/text_mgfname_title">
+
+    <TextView
+        android:id="@+id/text_mrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MRP: "
+        android:textColor="@color/colorblack"
+        android:textSize="15sp"
+        android:fontFamily="@font/sanfranciscodisplay_medium"
+        />
+
+    <TextView
+        android:id="@+id/text_mrp_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Rs4000"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp"
+        android:fontFamily="@font/sanfranciscodisplay_medium"
+        android:textColor="@color/colorgreen1"
+        android:layout_toEndOf="@+id/text_mrp"/>
+
+
+
+        <TextView
+            android:id="@+id/text_salerate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Net Rate: "
+            android:textColor="@color/colorblack"
+            android:textSize="15sp"
+            android:layout_below="@+id/text_mrp"
+            android:fontFamily="@font/sanfranciscodisplay_medium"
+            />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_mrp"
+        android:layout_toEndOf="@+id/text_salerate">
+
+        <TextView
+            android:id="@+id/text_salerate_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs20"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/sanfranciscodisplay_medium"
+            android:textColor="@color/colorlightgray"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/text_salerate_price2"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:text="Rs20"
+            android:gravity="center_vertical"
+           android:layout_marginTop="12dp"
+            android:background="@color/colorlightgray"
+            />
+
+        <TextView
+            android:id="@+id/text_salerate_price3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs20"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/sanfranciscodisplay_medium"
+            android:textColor="@color/colorgreen1"
+            android:layout_toEndOf="@+id/text_salerate_price"
+            android:textSize="14sp"
+            />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/text_pkg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Packing: "
+        android:layout_below="@+id/relative_mrp"
+        android:layout_toEndOf="@+id/image_product"
+        android:layout_marginTop="1dp"
+        android:textSize="15sp"
+        android:textColor="@color/colorblack"
+        android:fontFamily="@font/sanfranciscodisplay_medium"
+        />
+    <TextView
+        android:id="@+id/text_packingdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20/12/2020"
+        android:layout_marginEnd="2dp"
+        android:layout_toStartOf="@+id/text_home_addtocart"
+        android:layout_below="@+id/relative_mrp"
+        android:layout_toEndOf="@+id/text_pkg"
+        android:layout_marginTop="1dp"
+        android:textSize="14sp"
+        android:textColor="@color/colorblue1"
+        android:fontFamily="@font/sanfranciscodisplay_medium"
+        />
+
+    <TextView
+        android:id="@+id/text_exp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Exp: "
+        android:layout_below="@+id/text_pkg"
+        android:layout_toEndOf="@+id/image_product"
+        android:textColor="@color/colorblack"
+        android:textSize="15sp"
+        android:fontFamily="@font/sanfranciscodisplay_medium"
+        />
+    <TextView
+        android:id="@+id/text_expdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="March 2024"
+        android:layout_below="@+id/text_packingdate"
+        android:layout_toEndOf="@+id/text_exp"
+        android:layout_marginTop="2dp"
+        android:textSize="14sp"
+        android:textColor="@color/colorred"
+        android:fontFamily="@font/sanfranciscodisplay_medium"
+        />
+
+    <TextView
+        android:id="@+id/text_availabele_stock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="available Qty: "
+        android:layout_below="@+id/text_packingdate"
+        android:layout_toEndOf="@+id/text_expdate"
+        android:layout_marginTop="1dp"
+         android:textSize="15sp"
+        android:textColor="@color/colorblack"
+        android:fontFamily="@font/sanfranciscodisplay_medium"
+        />
+
+    <TextView
+        android:id="@+id/text_AvailabelStock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Out of Stock"
+        android:layout_alignTop="@+id/text_availabele_stock"
+        android:layout_toEndOf="@+id/text_availabele_stock"
+        android:layout_marginTop="1dp"
+        android:textSize="14sp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/colordarkblue"
+        android:fontFamily="@font/sanfranciscodisplay_medium"
+        />
+
+    <TextView
+        android:id="@+id/text_offer_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Offer: Buy 1 and Get 1 Free"
+        android:layout_below="@+id/text_exp"
+        android:textSize="16sp"
+        android:textColor="@color/colordarkblue"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toEndOf="@+id/image_product"
+        android:fontFamily="@font/sanfranciscodisplay_semibold"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="12dp"
+        android:layout_below="@+id/text_offer_note"
+        android:background="@color/transperent"/>
+
+    <TextView
+        android:id="@+id/text_home_addtocart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD CART"
+        android:textSize="14sp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="7sp"
+        android:layout_marginEnd="7dp"
+
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:paddingLeft="7sp"
+        android:background="@drawable/round_geen"
+        android:textColor="@color/colorwhite"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/sanfranciscodisplay_medium"
+        />
+
+
+</RelativeLayout>
+</RelativeLayout>

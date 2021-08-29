@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+
+android {
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    signingConfigs {
+        config {
+            keyAlias 'key0'
+            keyPassword 'akweb1'
+
+            storeFile file('/Users/sachinmokashi/Desktop/MyApp/untitled folder/Untitled')
+            storePassword 'akweb1'
+        }
+    }
+    compileSdkVersion 30
+    defaultConfig {
+        applicationId "info.wkweb.com.medical"
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 15
+        versionName "1.2"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        buildConfigField "String", "SEND_OTP_KEY", '"334053Akxn2Lw0DvR5efa3c61P1"'
+
+    }
+    buildTypes {
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+           // shrinkResources true
+            // minifyEnabled true
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation 'com.google.android.play:core:1.8.3'
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    implementation 'com.github.siyamed:android-shape-imageview:0.9.3@aar'
+    implementation 'com.github.chrisbanes:PhotoView:2.1.3'
+    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+   // implementation 'com.android.support:recyclerview-v7:28.0.0'
+
+
+    implementation 'com.msg91.sendotpandroid.library:library:1.2.2'
+
+}

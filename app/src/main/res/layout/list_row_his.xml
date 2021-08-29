@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorwhite"
+        >
+
+
+        <TextView
+            android:id="@+id/text_hist_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewStart"
+            android:lines="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:text="Total amount: Rs 1010"
+            android:layout_toStartOf="@+id/relative_his_details"
+            android:textColor="@color/colorblack"
+            android:fontFamily="@font/sanfranciscodisplay_medium"/>
+
+        <TextView
+            android:id="@+id/text_order_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order_id: pm121ad"
+            android:lines="1"
+            android:layout_below="@+id/text_hist_amount"
+            android:layout_marginStart="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorblack"
+            android:fontFamily="@font/sanfranciscodisplay_medium"/>
+
+        <TextView
+            android:id="@+id/text_his_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order cancel by self"
+            android:layout_toStartOf="@+id/relative_his_details"
+            android:lines="1"
+            android:layout_below="@+id/text_order_id"
+            android:layout_marginStart="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorblack"
+            android:fontFamily="@font/sanfranciscodisplay_medium"/>
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/relative_his_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/text_his_cancel"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/delete"
+                />
+
+            <TextView
+                android:id="@+id/text_his_Details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Details"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:paddingTop="7dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="7dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/border_color_logo"
+                android:textSize="16sp"
+                android:layout_below="@+id/text_his_cancel"
+                android:textColor="@color/colortab"
+                android:fontFamily="@font/sanfranciscodisplay_medium"/>
+
+
+        </RelativeLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:layout_below="@+id/relative_his_details"
+    android:background="@color/colorshadedblue"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

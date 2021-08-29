@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/back"
+    android:padding="0dp"
+    tools:context="info.wkweb.com.medical.SignUpActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transperent">
+
+        <TextView
+            android:id="@+id/text_signup_back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/back40"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:background="@color/transperent">
+
+            <TextView
+                android:id="@+id/text_signup_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="GET STARTED"
+                android:layout_marginTop="22dp"
+                android:textColor="@color/colorwhite"
+                android:textSize="18sp"
+                android:fontFamily="@font/sanfranciscodisplay_bold"/>
+
+    <ImageView
+        android:id="@+id/image_Logo"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text_signup_title"
+        android:src="@mipmap/logopm"/>
+
+    <EditText
+        android:id="@+id/edittext_signup_csutname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textSize="15sp"
+        android:singleLine="true"
+        android:background="@drawable/shapeemail"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:drawablePadding="10dp"
+        android:hint="Owner Name"
+
+        android:fontFamily="@font/sanfranciscodisplay_medium"
+        android:layout_below="@+id/image_Logo"
+        android:textColor="@color/colorwhite"
+        android:textColorHint="@color/colorwhite"
+        android:textColorHighlight="@color/colorwhite"/>
+
+        <EditText
+            android:id="@+id/edittext_signup_firmname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:background="@drawable/shapeemail"
+            android:drawableLeft="@drawable/ic_location_city_black_24dp"
+            android:drawablePadding="10dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/sanfranciscodisplay_medium"
+            android:hint="Shop Name"
+            android:singleLine="true"
+            android:layout_below="@+id/edittext_signup_csutname"
+            android:textColor="@color/colorwhite"
+            android:textColorHint="@color/colorwhite"
+            android:textColorHighlight="@color/colorwhite"/>
+
+
+
+    <EditText
+        android:id="@+id/edittext_signup_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textSize="15sp"
+        android:background="@drawable/shapeemail"
+        android:drawableLeft="@drawable/ic_mail_black_24dp"
+        android:drawablePadding="10dp"
+
+        android:fontFamily="@font/sanfranciscodisplay_medium"
+        android:hint="Email-id"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:layout_below="@+id/edittext_signup_firmname"
+        android:textColor="@color/colorwhite"
+        android:textColorHint="@color/colorwhite"
+        android:textColorHighlight="@color/colorwhite"/>
+
+    <EditText
+        android:id="@+id/edittext_signupid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:maxLength="10"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/sanfranciscodisplay_medium"
+        android:background="@drawable/shapeemail"
+        android:drawableLeft="@drawable/ic_call_black_24dp"
+        android:drawablePadding="10dp"
+        android:hint="Mobile Number"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textColor="@color/colorwhite"
+        android:textColorHint="@color/colorwhite"
+        android:layout_below="@+id/edittext_signup_email"
+        android:textColorHighlight="@color/colorwhite"/>
+
+        <EditText
+            android:id="@+id/edittext_signup_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/sanfranciscodisplay_medium"
+            android:background="@drawable/shapeemail"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="Password"
+            android:singleLine="true"
+            android:textColor="@color/colorwhite"
+            android:textColorHint="@color/colorwhite"
+            android:layout_below="@+id/edittext_signupid"
+            android:textColorHighlight="@color/colorwhite"/>
+
+
+    <EditText
+        android:id="@+id/edittext_signup_add1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/sanfranciscodisplay_medium"
+        android:background="@drawable/shapeemail"
+        android:drawableLeft="@drawable/ic_edit_location_black_24dp"
+        android:drawablePadding="10dp"
+        android:hint="Address"
+        android:singleLine="true"
+        android:layout_below="@+id/edittext_signup_pass"
+        android:textColor="@color/colorwhite"
+        android:textColorHint="@color/colorwhite"
+        android:textColorHighlight="@color/colorwhite"/>
+
+    <!--<EditText-->
+        <!--android:id="@+id/edittext_signup_add2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:padding="12dp"-->
+        <!--android:textSize="16sp"-->
+        <!--android:fontFamily="@font/sanfranciscodisplay_medium"-->
+        <!--android:background="@drawable/shapeemail"-->
+        <!--android:drawableLeft="@drawable/ic_edit_location_black_24dp"-->
+        <!--android:drawablePadding="10dp"-->
+        <!--android:hint="Address2"-->
+        <!--android:singleLine="true"-->
+        <!--android:layout_below="@+id/edittext_signup_add1"-->
+        <!--android:textColor="@color/colorwhite"-->
+        <!--android:textColorHint="@color/colorwhite"-->
+        <!--android:textColorHighlight="@color/colorwhite"/>-->
+
+    <EditText
+        android:id="@+id/edittext_signup_pincode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/sanfranciscodisplay_medium"
+        android:background="@drawable/shapeemail"
+        android:drawableLeft="@drawable/ic_person_pin_circle_black_24dp"
+        android:drawablePadding="10dp"
+        android:hint="Area Pincode"
+        android:singleLine="true"
+        android:inputType="number"
+        android:layout_below="@+id/edittext_signup_add1"
+        android:textColor="@color/colorwhite"
+        android:textColorHint="@color/colorwhite"
+        android:textColorHighlight="@color/colorwhite"/>
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/relative_signup_dlno"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginEnd="10dp"-->
+            <!--android:layout_marginStart="10dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:paddingTop="8dp"-->
+            <!--android:paddingBottom="8dp"-->
+            <!--android:paddingLeft="12dp"-->
+            <!--android:paddingRight="12dp"-->
+            <!--android:background="@drawable/shapeemail"-->
+            <!--android:layout_below="@+id/edittext_signup_pincode">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/ext_signup_dlno"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:singleLine="true"-->
+                <!--android:text="Select Licenses"-->
+                <!--android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"-->
+                <!--android:gravity="center"-->
+                <!--android:textSize="15sp"-->
+                <!--android:fontFamily="@font/sanfranciscodisplay_medium"-->
+                <!--android:textColor="@color/colorwhite"/>-->
+
+        <!--</RelativeLayout>-->
+
+    <EditText
+        android:id="@+id/edittext_signup_dlno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textSize="15sp"
+        android:singleLine="true"
+        android:fontFamily="@font/sanfranciscodisplay_medium"
+        android:background="@drawable/shapeemail"
+        android:drawableLeft="@drawable/ic_folder_shared_black_24dp"
+        android:drawablePadding="10dp"
+        android:hint="Drug License No"
+        android:visibility="visible"
+        android:layout_below="@+id/edittext_signup_gstnos"
+        android:textColor="@color/colorwhite"
+        android:textColorHint="@color/colorwhite"
+        android:textColorHighlight="@color/colorwhite"/>
+
+            <EditText
+                android:id="@+id/edittext_signup_fdno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:textSize="15sp"
+                android:singleLine="true"
+                android:fontFamily="@font/sanfranciscodisplay_medium"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/ic_folder_shared_black_24dp"
+                android:drawablePadding="10dp"
+                android:hint="Food License No"
+                android:visibility="visible"
+                android:layout_below="@+id/edittext_signup_dlno"
+                android:textColor="@color/colorwhite"
+                android:textColorHint="@color/colorwhite"
+                android:textColorHighlight="@color/colorwhite"/>
+
+            <EditText
+                android:id="@+id/edittext_signup_gstnos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:textSize="15sp"
+                android:singleLine="true"
+                android:fontFamily="@font/sanfranciscodisplay_medium"
+                android:background="@drawable/shapeemail"
+                android:drawableLeft="@drawable/ic_folder_shared_black_24dp"
+                android:drawablePadding="10dp"
+                android:hint="GST No"
+                android:visibility="visible"
+                android:layout_below="@+id/edittext_signup_pincode"
+                android:textColor="@color/colorwhite"
+                android:textColorHint="@color/colorwhite"
+                android:textColorHighlight="@color/colorwhite"/>
+
+        <RelativeLayout
+            android:id="@+id/relative_signup_idprof"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:background="@drawable/shapeemail"
+            android:layout_below="@+id/edittext_signup_fdno">
+
+            <TextView
+                android:id="@+id/text_signup_idprof"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:text="Select ID proof"
+                android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:fontFamily="@font/sanfranciscodisplay_medium"
+                android:textColor="@color/colorwhite"/>
+
+        </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/edittext_signup_gstno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/sanfranciscodisplay_medium"
+        android:singleLine="true"
+
+        android:background="@drawable/shapeemail"
+        android:drawableLeft="@drawable/ic_call_to_action_black_24dp"
+        android:drawablePadding="10dp"
+        android:hint="Type here..."
+        android:visibility="invisible"
+        android:layout_below="@+id/edittext_signup_fdno"
+        android:textColor="@color/colorwhite"
+        android:textColorHint="@color/colorwhite"
+        android:textColorHighlight="@color/colorwhite"/>
+
+
+
+    <TextView
+        android:id="@+id/text_login_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:fontFamily="@font/sanfranciscodisplay_medium"
+        android:textSize="20sp"
+        android:shadowColor="@android:color/transparent"
+        android:padding="12dp"
+
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/edittext_signup_gstno"
+        android:background="@drawable/shapesignup"
+        android:textColor="@color/colorwhite"/>
+
+    </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

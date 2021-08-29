@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grouptablevicecolor"
+    tools:context="info.wkweb.com.medical.OnlineActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relative_online_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:id="@+id/text_title_revieworder"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:text="Online Details"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:fontFamily="@font/sanfranciscodisplay_medium"
+            android:textColor="@color/colorwhite"
+            />
+
+        <TextView
+            android:id="@+id/text_back_online"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="40dp"
+            android:text="Back"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:fontFamily="@font/sanfranciscodisplay_medium"
+            android:textColor="@color/colorwhite"
+            />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_online_title">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/relative_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/textview_online_detaile_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:gravity="center"
+                android:fontFamily="@font/sanfranciscodisplay_semibold"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/colorblack"
+                android:text="Select a your paymet type"
+                />
+
+            <TextView
+                android:id="@+id/text_online_bank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bank"
+                android:background="@drawable/round_white1"
+                android:layout_below="@+id/textview_online_detaile_title"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:textColor="@color/colortab"
+                android:textSize="16sp"
+                android:fontFamily="@font/sanfranciscodisplay_semibold"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/text_online_googlepay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Google Pay"
+                android:background="@drawable/round_white1"
+                android:layout_below="@+id/text_online_bank"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:textColor="@color/colortab"
+                android:textSize="16sp"
+                android:fontFamily="@font/sanfranciscodisplay_semibold"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/text_online_phonepay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone Pay"
+                android:background="@drawable/round_white1"
+                android:layout_below="@+id/text_online_googlepay"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:textColor="@color/colortab"
+                android:textSize="16sp"
+                android:fontFamily="@font/sanfranciscodisplay_semibold"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/text_online_payatm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Payatm"
+                android:background="@drawable/round_white1"
+                android:layout_below="@+id/text_online_phonepay"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textColor="@color/colortab"
+                android:textSize="16sp"
+                android:fontFamily="@font/sanfranciscodisplay_semibold"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/relative_banks11"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:visibility="visible"
+    android:background="@color/colorwhite"
+    android:layout_below="@+id/relative_details">
+
+    <TextView
+        android:id="@+id/text_banks_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Details:"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/sanfranciscodisplay_semibold"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/text_bankholdername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_banks_title"
+        android:text="Name: "
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/sanfranciscodisplay_semibold"
+        android:gravity="center"
+        android:textColor="@color/colorblack"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/text_bankholdername1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_banks_title"
+       android:layout_toEndOf="@+id/text_bankholdername"
+        android:text="Sachin ramling mokashi"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/sanfranciscodisplay_medium"
+        android:gravity="center"
+        android:textColor="@color/colordarkblue"
+        android:layout_marginStart="3dp"/>
+
+    <TextView
+        android:id="@+id/text_bank_accno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_bankholdername"
+        android:text="Account No.: "
+        android:layout_marginBottom="5dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/sanfranciscodisplay_semibold"
+        android:gravity="center"
+        android:textColor="@color/colorblack"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/text_bank_accno1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_bankholdername1"
+        android:layout_toEndOf="@+id/text_bank_accno"
+        android:text="0030838723698"
+        android:layout_marginBottom="5dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/sanfranciscodisplay_medium"
+        android:gravity="center"
+        android:textColor="@color/colordarkblue"
+        android:layout_marginStart="3dp"/>
+
+    <TextView
+        android:id="@+id/text_bank_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/text_bank_name1"
+        android:layout_below="@+id/text_bank_accno1"
+        android:text="State bank of India "
+        android:layout_marginBottom="5dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/sanfranciscodisplay_medium"
+        android:gravity="center"
+        android:textColor="@color/colordarkblue"
+        android:layout_marginStart="3dp"/>
+
+    <TextView
+        android:id="@+id/text_bank_name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_bank_accno"
+        android:text="Bank Name: "
+        android:layout_marginBottom="5dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/sanfranciscodisplay_semibold"
+        android:gravity="center"
+        android:textColor="@color/colorblack"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/text_bank_ifsc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_bank_name"
+        android:text="IFSC Code: "
+        android:layout_marginBottom="8dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/sanfranciscodisplay_semibold"
+        android:gravity="center"
+        android:textColor="@color/colorblack"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/text_bank_ifsc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/text_bank_ifsc1"
+        android:layout_below="@+id/text_bank_name"
+        android:text="SBIN002170"
+        android:layout_marginBottom="8dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/sanfranciscodisplay_medium"
+        android:gravity="center"
+        android:textColor="@color/colordarkblue"
+        android:layout_marginStart="3dp"/>
+    <TextView
+        android:id="@+id/text_bank_mob1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_bank_ifsc1"
+        android:text="Mobile No.: "
+        android:layout_marginBottom="10dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/sanfranciscodisplay_semibold"
+        android:gravity="center"
+        android:textColor="@color/colorblack"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/text_bank_mob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/text_bank_mob1"
+        android:layout_below="@+id/text_bank_ifsc"
+        android:text="8850519524"
+        android:layout_marginBottom="10dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/sanfranciscodisplay_medium"
+        android:gravity="center"
+        android:textColor="@color/colordarkblue"
+        android:layout_marginStart="3dp"/>
+
+</RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_mobilepay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:visibility="invisible"
+            android:background="@color/colorwhite"
+            android:layout_below="@+id/relative_details">
+
+            <TextView
+                android:id="@+id/text_banks_title_mob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Pay Details:"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="15sp"
+                android:fontFamily="@font/sanfranciscodisplay_semibold"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/text_mobilepay1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_banks_title_mob"
+                android:text="Mobile No.: "
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="15sp"
+                android:fontFamily="@font/sanfranciscodisplay_semibold"
+                android:gravity="center"
+                android:textColor="@color/colorblack"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:id="@+id/text_mobilepay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_banks_title_mob"
+                android:layout_toEndOf="@+id/text_mobilepay1"
+                android:text="8850519524"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:textSize="15sp"
+                android:fontFamily="@font/sanfranciscodisplay_medium"
+                android:gravity="center"
+                android:textColor="@color/colordarkblue"
+                android:layout_marginStart="3dp"/>
+
+
+        </RelativeLayout>
+
+</RelativeLayout>
+        </ScrollView>
+    <ProgressBar
+        android:id="@+id/progress_online_act"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+     </RelativeLayout>
+
+

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounderwhite">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+            android:id="@+id/image_rvorder"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="7dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:siShape="@drawable/shape_rounded_rectangle"
+            app:siSquare="true"
+            android:src="@drawable/default1"/>
+
+
+        <TextView
+            android:id="@+id/text_title_rvor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doloe"
+            android:textAlignment="viewStart"
+            android:lines="1"
+            android:layout_marginStart="10dp"
+            android:layout_alignTop="@+id/image_rvorder"
+            android:layout_toEndOf="@+id/image_rvorder"
+            android:textSize="17sp"
+            android:layout_marginTop="-4dp"
+            android:textColor="@color/colorblack"
+            android:fontFamily="@font/sanfranciscodisplay_bold"/>
+
+        <TextView
+            android:id="@+id/text_title_rvor_mfg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MFG: "
+            android:lines="1"
+            android:layout_marginTop="-2dp"
+            android:layout_below="@+id/text_title_rvor"
+            android:layout_toEndOf="@+id/image_rvorder"
+            android:layout_marginStart="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/colorblack"
+            android:fontFamily="@font/sanfranciscodisplay_medium"/>
+        <TextView
+            android:id="@+id/text_title_rvor_mfg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CIPLA"
+            android:lines="1"
+            android:layout_marginTop="-2dp"
+            android:layout_below="@+id/text_title_rvor"
+            android:layout_toEndOf="@+id/text_title_rvor_price1"
+            android:layout_marginStart="1dp"
+            android:textSize="14sp"
+            android:textColor="@color/colorblack"
+            android:fontFamily="@font/sanfranciscodisplay_medium"/>
+
+        <TextView
+            android:id="@+id/text_title_rvor_price1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MRP: "
+            android:lines="1"
+            android:layout_below="@+id/text_title_rvor_mfg1"
+            android:layout_toEndOf="@+id/image_rvorder"
+            android:layout_marginStart="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/colorblack"
+            android:fontFamily="@font/sanfranciscodisplay_medium"/>
+        <TextView
+            android:id="@+id/text_title_rvor_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs1000.00"
+            android:lines="1"
+            android:layout_below="@+id/text_title_rvor_mfg"
+            android:layout_toEndOf="@+id/text_title_rvor_price1"
+            android:layout_marginStart="1dp"
+            android:textSize="14sp"
+            android:textColor="@color/colorgreen1"
+            android:fontFamily="@font/sanfranciscodisplay_medium"/>
+
+        <TextView
+            android:id="@+id/text_title_rvor_netsale1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate: "
+            android:lines="1"
+            android:layout_below="@+id/text_title_rvor_mfg"
+            android:layout_toEndOf="@+id/text_title_rvor_price"
+            android:layout_marginStart="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/colorblack"
+            android:fontFamily="@font/sanfranciscodisplay_medium"/>
+        <TextView
+            android:id="@+id/text_title_rvor_netsale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs1000.00"
+            android:lines="1"
+            android:layout_below="@+id/text_title_rvor_mfg"
+            android:layout_toEndOf="@+id/text_title_rvor_netsale1"
+            android:layout_marginStart="1dp"
+            android:textSize="14sp"
+            android:textColor="@color/colorgreen1"
+            android:fontFamily="@font/sanfranciscodisplay_medium"/>
+
+        <TextView
+            android:id="@+id/text_title_rvor_total1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total: "
+            android:lines="1"
+            android:layout_below="@+id/text_title_rvor_netsale1"
+            android:layout_toEndOf="@+id/image_rvorder"
+            android:layout_marginStart="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/colorblack"
+            android:fontFamily="@font/sanfranciscodisplay_medium"/>
+        <TextView
+            android:id="@+id/text_title_rvor_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs 200"
+            android:lines="1"
+            android:layout_below="@+id/text_title_rvor_netsale"
+            android:layout_toEndOf="@+id/text_title_rvor_total1"
+            android:layout_marginStart="1dp"
+            android:textSize="14sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/colorgreen1"
+            android:fontFamily="@font/sanfranciscodisplay_medium"/>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_below="@+id/text_title_rvor_netsale1"
+    android:layout_toEndOf="@+id/text_title_rvor_total"
+    >
+
+    <TextView
+        android:id="@+id/text_title_rvor_kgs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qty: "
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textColor="@color/colorblack"
+        android:fontFamily="@font/sanfranciscodisplay_medium"/>
+    <TextView
+        android:id="@+id/text_title_rvor_kgs1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10000"
+        android:layout_toEndOf="@+id/text_title_rvor_kgs"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textColor="@color/colorgreen1"
+        android:fontFamily="@font/sanfranciscodisplay_semibold"/>
+
+</RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

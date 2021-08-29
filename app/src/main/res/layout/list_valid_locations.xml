@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linear_valid_loc1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:background="@color/colorshadedblue1"
+        >
+        <TextView
+            android:id="@+id/text_vloc_locno"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:text="1"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="@color/colorblack"
+            android:fontFamily="@font/sanfranciscodisplay_medium"/>
+        <TextView
+            android:id="@+id/text_vloc_locname"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Tasgaon"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="@color/colorblack"
+            android:fontFamily="@font/sanfranciscodisplay_medium"/>
+        <TextView
+            android:id="@+id/text_vloc_pincode"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:text="416312"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="@color/colorblack"
+            android:fontFamily="@font/sanfranciscodisplay_medium"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorshadedblue"
+        android:layout_below="@+id/linear_valid_loc1"/>
+
+</RelativeLayout>

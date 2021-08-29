@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="info.wkweb.com.medical.HomeActivity">
+<RelativeLayout
+    android:id="@+id/relative_topbar"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/colorshadedblue">
+
+    <ImageView
+        android:id="@+id/image_logo_topmain"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:background="@mipmap/logopm"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/image_logo_topmain"
+        android:layout_marginStart="10dp"
+        android:text="PRITAMA MEDICALS"
+        android:textColor="@color/colorwhite"
+        android:layout_centerVertical="true"
+        android:textSize="18sp"
+        android:fontFamily="@font/sanfranciscodisplay_medium"/>
+    <TextView
+        android:id="@+id/text_intenet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No internet connection!"
+        android:gravity="center"
+        android:background="@color/colorred"
+        android:textColor="@color/colorwhite"
+        android:layout_centerVertical="true"
+        android:textSize="16sp"
+        android:fontFamily="@font/sanfranciscodisplay_medium"/>
+
+</RelativeLayout>
+    <FrameLayout
+        android:id="@+id/famelaout_tabbar_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_topbar"
+        android:layout_above="@+id/bottom_tablayouts"
+
+        />
+
+    <FrameLayout
+        android:id="@+id/famelaout_tabbar_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_topbar"
+        android:layout_above="@+id/bottom_tablayouts"
+        android:background="@color/colorshadedblue"
+        />
+
+    <FrameLayout
+        android:id="@+id/famelaout_tabbar_cart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_topbar"
+        android:layout_above="@+id/bottom_tablayouts"
+        android:background="@color/colorshadedblue"
+        />
+
+    <FrameLayout
+        android:id="@+id/famelaout_tabbar_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_topbar"
+        android:layout_above="@+id/bottom_tablayouts"
+        android:background="@color/colorshadedblue"
+        />
+
+    <FrameLayout
+        android:id="@+id/famelaout_tabbar_inq"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_topbar"
+        android:layout_above="@+id/bottom_tablayouts"
+        android:background="@color/colorshadedblue"
+        />
+
+    <FrameLayout
+        android:id="@+id/famelaout_tabbar_more"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_topbar"
+        android:layout_above="@+id/bottom_tablayouts"
+        android:background="@color/colorshadedblue"
+        />
+
+
+    <include android:id="@+id/bottom_tablayouts"
+        layout="@layout/bottom_layouttabs"/>
+
+
+</RelativeLayout>

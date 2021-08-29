@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorshadedblue"
+    tools:context="info.wkweb.com.medical.NewOfferActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relative_newoff_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:id="@+id/text_title_newoff"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:text="New Offer"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:fontFamily="@font/sanfranciscodisplay_medium"
+            android:textColor="@color/colorwhite"
+            />
+
+        <TextView
+            android:id="@+id/text_back_newoff"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="40dp"
+            android:text="Back"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:fontFamily="@font/sanfranciscodisplay_medium"
+            android:textColor="@color/colorwhite"
+            />
+
+    </RelativeLayout>
+
+
+
+        <SearchView
+            android:id="@+id/searchView_new"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/relative_newoff_title"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:background="@color/colorwhite"
+            android:queryHint="Search Medicine/Mfg Name"
+            android:iconifiedByDefault="false"
+            android:queryBackground="@color/colorwhite"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:closeIcon="@drawable/closes1"
+            android:searchIcon="@drawable/searches2"
+            />
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeToRefresh_home_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/searchView_new">
+            <ListView
+                android:id="@+id/listview_home_list_new"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:divider="@color/colorwhite"
+                />
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_home_new"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+

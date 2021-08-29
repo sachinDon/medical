@@ -1,0 +1,95 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorshadedblue"
+    tools:context="info.wkweb.com.medical.CartFragment">
+
+    <RelativeLayout
+        android:id="@+id/relative_dyanamicrow_cu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_cartcusti_title"
+        >
+
+
+
+        <TextView
+            android:id="@+id/text_cart_subtotal_cu"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_above="@+id/text_cart_buy_cu"
+            android:text="Subtotal(3 Items): 1456$"
+            android:fontFamily="@font/sanfranciscodisplay_semibold"
+            android:textColor="@color/colorwhite"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:layout_marginTop="1dp"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/text_cart_buy_cu"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Proceed to Buy"
+            android:gravity="center"
+            android:fontFamily="@font/sanfranciscodisplay_bold"
+            android:textColor="@color/colorwhite"
+            android:background="@drawable/round_geen"
+            android:textSize="18sp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="7dp"
+            />
+
+
+        <ScrollView
+            android:id="@+id/scrollView_cart_cu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            android:layout_above="@+id/text_cart_subtotal_cu">
+
+            <LinearLayout
+                android:id="@+id/linear_dyanamicrow_cu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <ListView
+            android:id="@+id/listview_carts_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/text_cart_subtotal_cu"
+            android:layout_marginTop="0dp"
+            android:divider="@color/colorwhite"
+            />
+
+        <TextView
+            android:id="@+id/text_result_cust_cartsitems12"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:background="@drawable/emptycart"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:fontFamily="@font/sanfranciscodisplay_bold"/>
+        <ProgressBar
+            android:id="@+id/progress_customer_cart"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

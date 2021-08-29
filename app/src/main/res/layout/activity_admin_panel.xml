@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="info.wkweb.com.medical.AdminPanelActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative_divs_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:id="@+id/text_title_divs"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:text="DeliveryOrder"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:fontFamily="@font/sanfranciscodisplay_medium"
+            android:textColor="@color/colorwhite"
+            />
+
+
+
+
+
+        <TextView
+            android:id="@+id/text_logout_divis"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_alignParentEnd="true"
+            android:text="Logout"
+
+            android:gravity="center"
+            android:textSize="17sp"
+            android:fontFamily="@font/sanfranciscodisplay_bold"
+            android:textColor="@color/colorred"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_divs_title">
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeToRefresh_adminpanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            >
+        <ListView
+            android:id="@+id/listview_divs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:divider="@color/colorwhite"
+            />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/text_result_divs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No data"
+        android:textColor="@color/colorblack"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:fontFamily="@font/sanfranciscodisplay_bold"/>
+
+    <ProgressBar
+        android:id="@+id/progress_divs"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

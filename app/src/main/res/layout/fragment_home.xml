@@ -1,0 +1,285 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorshadedblue"
+    tools:context="info.wkweb.com.medical.HomeFragment">
+    <RelativeLayout
+        android:id="@+id/relative_home_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <SearchView
+            android:id="@+id/searchView_home"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:background="@color/colorwhite"
+            android:queryHint="Search Medicine/offer/Mfg Name"
+            android:iconifiedByDefault="false"
+            android:queryBackground="@color/colorwhite"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:closeIcon="@drawable/closes1"
+            android:searchIcon="@drawable/searches2"
+            />
+
+        <RelativeLayout
+            android:id="@+id/relative_menus"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/searchView_home">
+
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/relative_slects_custcat"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginStart="10dp"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:background="@drawable/boderline_bottom1px">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/text_caticon"-->
+            <!--android:layout_width="23dp"-->
+            <!--android:layout_height="23dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:fontFamily="@font/sanfranciscodisplay_semibold"-->
+            <!--android:background="@drawable/category"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/text_select_cat_title"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@color/colorwhite"-->
+            <!--android:paddingRight="10dp"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:textSize="15sp"-->
+            <!--android:layout_toEndOf="@+id/text_caticon"-->
+            <!--android:fontFamily="@font/sanfranciscodisplay_semibold"-->
+            <!--android:text="Category"/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/text_arrow_selectcat"-->
+            <!--android:layout_width="22dp"-->
+            <!--android:layout_height="22dp"-->
+            <!--android:layout_marginEnd="8dp"-->
+            <!--android:layout_marginStart="10dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toEndOf="@+id/text_select_cat_title"-->
+            <!--android:gravity="center"-->
+            <!--android:fontFamily="@font/sanfranciscodisplay_semibold"-->
+            <!--android:background="@drawable/downarrowwhite"/>-->
+
+            <!--</RelativeLayout>-->
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/relative_pharama"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/text_check_pharma"
+                    android:layout_width="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="20dp"
+                    android:background="@drawable/radio_uncheck"/>
+
+                <TextView
+                    android:id="@+id/text_phrama_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_toEndOf="@+id/text_check_pharma"
+                    android:text="Pharma"
+                    android:fontFamily="@font/sanfranciscodisplay_medium"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/colorwhite"
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_genral"
+                android:layout_toEndOf="@+id/relative_pharama"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_height="40dp">
+                <TextView
+                    android:id="@+id/text_check_genral"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/radio_uncheck"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/text_genral_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_toEndOf="@+id/text_check_genral"
+                    android:text="General"
+                    android:fontFamily="@font/sanfranciscodisplay_medium"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/colorwhite"
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relative_surgicale"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/relative_genral">
+                <TextView
+                    android:id="@+id/text_check_surgicale"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/radio_uncheck"/>
+
+                <TextView
+                    android:id="@+id/text_surgicale_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_toEndOf="@+id/text_check_surgicale"
+                    android:text="Surgical"
+                    android:fontFamily="@font/sanfranciscodisplay_medium"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/colorwhite"
+                    android:gravity="center"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_new"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/relative_surgicale">
+
+                <TextView
+                    android:id="@+id/text_check_new"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/radio_uncheck" />
+
+
+                <TextView
+                    android:id="@+id/text_new_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="3dp"
+                    android:layout_toEndOf="@+id/text_check_new"
+                    android:fontFamily="@font/sanfranciscodisplay_semibold"
+                    android:gravity="center"
+                    android:text="Veterinary"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/recycler_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/relative_menus"-->
+        <!--android:scrollbars="vertical" />-->
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeToRefresh_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_below="@+id/relative_menus">
+            <ListView
+                android:id="@+id/listview_home_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:divider="@color/colorwhite"
+                />
+
+
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_home"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_newoffer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        >
+
+        <SearchView
+            android:id="@+id/searchView_new"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/relative_newoff_title"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:background="@color/colorwhite"
+            android:queryHint="Search Medicine/Mfg Name"
+            android:iconifiedByDefault="false"
+            android:queryBackground="@color/colorwhite"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:closeIcon="@drawable/closes1"
+            android:searchIcon="@drawable/searches2"
+            />
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeToRefresh_home_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_below="@+id/searchView_new">
+            <ListView
+                android:id="@+id/listview_home_list_new"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:divider="@color/colorwhite"
+                />
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_home_new"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

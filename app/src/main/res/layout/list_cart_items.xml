@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/relative_listitem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorwhite"
+         android:layout_marginTop="2dp">
+
+        <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+            android:id="@+id/image_product_cart"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:siShape="@drawable/shape_rounded_rectangle"
+            app:siSquare="true"
+            android:src="@drawable/default1"
+            />
+
+        <TextView
+            android:id="@+id/text_offer_per_cart"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/sale3"
+            android:text="10%"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:gravity="center"
+            android:textColor="@color/colorwhite"
+            android:fontFamily="@font/sanfranciscodisplay_bold"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/text_productname_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:layout_toStartOf="@+id/text_offer_per_cart"
+            android:text="Detol liquid"
+            android:textSize="16sp"
+            android:textColor="@color/colorblack"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/sanfranciscodisplay_bold"
+            android:layout_toEndOf="@+id/image_product_cart"/>
+
+        <TextView
+            android:id="@+id/text_mgfname_title_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:text="MFG: "
+            android:textSize="15sp"
+            android:textColor="@color/colorblack"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/text_productname_cart"
+            android:fontFamily="@font/sanfranciscodisplay_medium"
+            android:layout_toEndOf="@+id/image_product_cart"/>
+        <TextView
+            android:id="@+id/text_mgfname_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cipla"
+            android:textSize="14sp"
+            android:textColor="@color/colorblack"
+            android:layout_marginStart="5dp"
+            android:layout_below="@+id/text_productname_cart"
+            android:fontFamily="@font/sanfranciscodisplay_medium"
+            android:layout_toEndOf="@+id/text_mgfname_title_cart"/>
+
+        <RelativeLayout
+            android:id="@+id/relative_mrp_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/image_product_cart"
+            android:layout_below="@+id/text_mgfname_title_cart">
+
+            <TextView
+                android:id="@+id/text_mrp_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="2dp"
+                android:text="MRP: "
+                android:textColor="@color/colorblack"
+                android:textSize="15sp"
+                android:fontFamily="@font/sanfranciscodisplay_medium"
+                />
+
+            <TextView
+                android:id="@+id/text_mrp_price_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:text="Rs4000"
+                android:layout_centerHorizontal="true"
+                android:textSize="14sp"
+                android:layout_toEndOf="@+id/text_mrp_cart"
+                android:fontFamily="@font/sanfranciscodisplay_medium"
+                android:textColor="@color/colorgreen1"
+                />
+
+
+           <TextView
+                    android:id="@+id/text_salerate_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Net Rate: "
+                    android:textColor="@color/colorblack"
+                    android:textSize="15sp"
+                    android:layout_below="@+id/text_mrp_cart"
+                    android:fontFamily="@font/sanfranciscodisplay_medium"
+                    />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_mrp_cart"
+                android:layout_toEndOf="@+id/text_salerate_cart">
+
+                <TextView
+                    android:id="@+id/text_salerate_price_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs20"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/sanfranciscodisplay_medium"
+                    android:textColor="@color/colorlightgray"
+                    android:textSize="14sp"
+                    />
+                <TextView
+                    android:id="@+id/text_salerate_price_cart2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:text="Rs20"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/colorlightgray"
+                    />
+
+                <TextView
+                    android:id="@+id/text_salerate_price_cart3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs20"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/sanfranciscodisplay_medium"
+                    android:textColor="@color/colorgreen1"
+                    android:layout_toEndOf="@+id/text_salerate_price_cart2"
+                    android:textSize="14sp"
+                    />
+
+            </RelativeLayout>
+
+                <!--<TextView-->
+                    <!--android:id="@+id/text_salerate_price_cart"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginEnd="5dp"-->
+                    <!--android:text="Rs2000"-->
+                    <!--android:textColor="@color/colorgreen1"-->
+                    <!--android:textSize="14sp"-->
+                    <!--android:layout_below="@+id/text_mrp_price_cart"-->
+                    <!--android:fontFamily="@font/sanfranciscodisplay_medium"-->
+                    <!--android:layout_toEndOf="@+id/text_salerate_cart"/>-->
+
+
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/text_pkg_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Qty: "
+            android:layout_below="@+id/relative_mrp_cart"
+            android:layout_toEndOf="@+id/image_product_cart"
+            android:layout_marginTop="1dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorblack"
+            android:fontFamily="@font/sanfranciscodisplay_medium"
+            />
+        <TextView
+            android:id="@+id/text_packingdate_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="201 x 2020"
+            android:layout_marginEnd="2dp"
+            android:layout_toStartOf="@+id/text_home_addtocart1"
+            android:layout_below="@+id/relative_mrp_cart"
+            android:layout_toEndOf="@+id/text_pkg_cart"
+            android:layout_marginTop="1dp"
+            android:textSize="14sp"
+            android:textColor="@color/colorblue1"
+            android:fontFamily="@font/sanfranciscodisplay_medium"
+            />
+
+        <TextView
+            android:id="@+id/text_exp_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Total Amount: "
+            android:layout_below="@+id/text_pkg_cart"
+            android:layout_toEndOf="@+id/image_product_cart"
+
+            android:textColor="@color/colorblack"
+            android:textSize="15sp"
+            android:fontFamily="@font/sanfranciscodisplay_medium"
+            />
+        <TextView
+            android:id="@+id/text_expdate_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs 2000"
+            android:layout_below="@+id/text_packingdate_cart"
+            android:layout_toEndOf="@+id/text_exp_cart"
+            android:layout_marginTop="2dp"
+            android:textSize="14sp"
+            android:textColor="@color/colorgreen1"
+            android:fontFamily="@font/sanfranciscodisplay_medium"
+            />
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/text_home_addtocart1"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginEnd="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/closes1"
+            android:textColor="@color/colorwhite"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/sanfranciscodisplay_medium"
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/relative_custadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="10dp"
+           android:layout_toEndOf="@+id/image_product_cart"
+            android:layout_below="@+id/text_expdate_cart"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:id="@+id/text_cart_qtytitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Add Quantity: "
+                android:gravity="center"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/sanfranciscodisplay_medium"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/text_cart_minus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:textColor="@color/colorwhite"
+                android:gravity="center"
+                android:fontFamily="@font/sanfranciscodisplay_bold"
+               android:layout_toEndOf="@+id/text_cart_qtytitle1"
+                android:background="@drawable/iconminus"/>
+
+            <TextView
+                android:id="@+id/text_cart_qtytitle"
+                android:layout_width="55dp"
+                android:layout_height="30dp"
+                android:text="1"
+                android:gravity="center"
+                android:textColor="@color/colortab"
+                android:layout_toEndOf="@+id/text_cart_minus"
+                android:fontFamily="@font/sanfranciscodisplay_semibold"
+                android:textSize="17sp"
+               />
+            <TextView
+                android:id="@+id/text_cart_plus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toEndOf="@+id/text_cart_qtytitle"
+                android:fontFamily="@font/sanfranciscodisplay_bold"
+
+                android:textColor="@color/colorwhite"
+                android:background="@drawable/iconplus"/>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/text_offer_note_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buy 1 and Get 1 Free"
+            android:layout_below="@+id/relative_custadd"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colordarkblue"
+            android:fontFamily="@font/sanfranciscodisplay_semibold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="7dp"
+            android:layout_below="@+id/text_offer_note_cart"
+            android:background="@color/transperent"/>
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/relative_listitem"
+        android:background="@color/colorlightgray"/>
+
+</RelativeLayout>

@@ -1,0 +1,257 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorshadedblue"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="info.wkweb.com.medical.InquiryFragment">
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/text_inq_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Datails of Medicine"
+                    android:layout_marginTop="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/sanfranciscodisplay_semibold"/>
+
+                <RelativeLayout
+                    android:id="@+id/relative_inq_row1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/text_inq_title">
+
+
+
+                    <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+                        android:id="@+id/image_inq_upload"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_centerHorizontal="true"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        app:siShape="@drawable/shape_rounded_rectangle"
+                        app:siSquare="false"
+                        android:background="@drawable/default1"/>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Image"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/colortab"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/sanfranciscodisplay_semibold"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relative_inq_row2"
+                    android:layout_marginTop="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_below="@+id/relative_inq_row1">
+
+                    <TextView
+                        android:id="@+id/text_genricname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Medicine Name: "
+                        android:gravity="center"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/sanfranciscodisplay_semibold"/>
+
+                    <EditText
+                        android:id="@+id/edit_genricname"
+                        android:layout_width="match_parent"
+                        android:layout_toEndOf="@+id/text_genricname"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="5dp"
+                        android:paddingLeft="5dp"
+                        android:textSize="16sp"
+                        android:gravity="center_vertical"
+                        android:fontFamily="@font/sanfranciscodisplay_medium"
+                        android:maxLines="1"
+                        android:inputType="text|textNoSuggestions"
+                        android:hint="Medicine Name"
+                        android:background="@drawable/blackline_border"/>
+
+                    <TextView
+                        android:id="@+id/text_inq_mfg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="MFG Comp: "
+                        android:gravity="center"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="16sp"
+                        android:layout_below="@+id/text_genricname"
+                        android:fontFamily="@font/sanfranciscodisplay_semibold"/>
+
+                    <EditText
+                        android:id="@+id/edit_inq_mfg"
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/edit_genricname"
+                        android:layout_toEndOf="@+id/text_inq_mfg"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="5dp"
+                        android:textSize="16sp"
+                        android:gravity="center_vertical"
+                        android:fontFamily="@font/sanfranciscodisplay_medium"
+                        android:maxLines="1"
+                        android:layout_alignStart="@+id/edit_genricname"
+                        android:inputType="text|textNoSuggestions"
+                        android:hint="Company Name"
+                        android:background="@drawable/blackline_border"/>
+
+                    <TextView
+                        android:id="@+id/text_inq_qty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Quantity: "
+                        android:gravity="center"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="16sp"
+                        android:layout_below="@+id/text_inq_mfg"
+                        android:fontFamily="@font/sanfranciscodisplay_semibold"/>
+
+                    <EditText
+                        android:id="@+id/edit_inq_qty"
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/edit_inq_mfg"
+                        android:layout_toEndOf="@+id/text_inq_qty"
+                        android:layout_alignStart="@+id/edit_genricname"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="5dp"
+                        android:textSize="16sp"
+                        android:gravity="center_vertical"
+                        android:fontFamily="@font/sanfranciscodisplay_medium"
+                        android:maxLines="1"
+                        android:inputType="text|textNoSuggestions"
+                        android:hint="Quantity"
+                        android:background="@drawable/blackline_border"/>
+
+                    <TextView
+                        android:id="@+id/text_inq_note"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Note: "
+                        android:gravity="center"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="16sp"
+                        android:layout_below="@+id/text_inq_qty"
+                        android:fontFamily="@font/sanfranciscodisplay_semibold"/>
+
+                    <EditText
+                        android:id="@+id/edit_inq_note"
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/edit_inq_qty"
+                        android:layout_toEndOf="@+id/text_inq_note"
+                        android:layout_alignStart="@+id/edit_genricname"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="5dp"
+                        android:textSize="16sp"
+                        android:gravity="center_vertical"
+                        android:fontFamily="@font/sanfranciscodisplay_medium"
+                        android:maxLines="1"
+                        android:inputType="text|textNoSuggestions"
+                        android:hint="Description about medicine"
+                        android:background="@drawable/blackline_border"/>
+
+                    <TextView
+                        android:id="@+id/text_inq_mreq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Request Type: "
+                        android:gravity="center"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="16sp"
+                        android:layout_below="@+id/text_inq_note"
+                        android:fontFamily="@font/sanfranciscodisplay_semibold"/>
+
+                   <RelativeLayout
+                       android:id="@+id/reletive_inq_select"
+                       android:layout_width="match_parent"
+                       android:layout_below="@+id/edit_inq_note"
+                       android:layout_toEndOf="@+id/text_inq_mreq"
+
+                       android:layout_height="40dp"
+                       android:layout_alignStart="@+id/edit_inq_note"
+                       android:background="@drawable/blackline_border"
+                       android:layout_marginTop="10dp">
+
+
+                       <TextView
+                           android:id="@+id/text_inq_mreqtype"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:text="Select"
+                           android:layout_centerHorizontal="true"
+                           android:gravity="center"
+                           android:textColor="@color/colorblack"
+                           android:textSize="16sp"
+                           android:drawableRight="@drawable/backdown"
+                           android:layout_marginEnd="10dp"
+                           android:layout_marginStart="10dp"
+                           android:fontFamily="@font/sanfranciscodisplay_medium"/>
+
+                   </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/text_inq_submit"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:text="Submit"
+                        android:gravity="center"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/sanfranciscodisplay_semibold"
+                        android:textColor="@color/colorwhite"
+                        android:background="@drawable/round_geen"
+                        android:layout_below="@+id/reletive_inq_select"/>
+
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+
+
+        </ScrollView>
+
+
+
+</FrameLayout>

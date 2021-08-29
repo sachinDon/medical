@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/back"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="info.wkweb.com.medical.LoginActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="30dp"
+        android:src="@mipmap/logopm"/>
+
+    <EditText
+        android:id="@+id/edittext_login_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:padding="15dp"
+        android:background="@drawable/shapeemail"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:drawablePadding="10dp"
+        android:hint="Mobile Number"
+        android:maxLength="10"
+        android:inputType="number"
+        android:textSize="16sp"
+        android:fontFamily="@font/sanfranciscodisplay_medium"
+        android:textColor="@color/colorwhite"
+        android:textColorHint="@color/colorwhite"
+        android:textColorHighlight="@color/colorwhite"/>
+
+    <EditText
+        android:id="@+id/edittext_login_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:background="@drawable/shapeemail"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:drawablePadding="10dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="16sp"
+        android:fontFamily="@font/sanfranciscodisplay_medium"
+        android:textColor="@color/colorwhite"
+        android:textColorHint="@color/colorwhite"
+        android:textColorHighlight="@color/colorwhite"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:id="@+id/linear_login_forpass"
+        android:layout_gravity="center">
+
+        <!--<CheckBox-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Remember Me"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_marginTop="0dp"-->
+            <!--android:textColor="@color/colorwhite"-->
+            <!--android:buttonTint="@color/colorwhite"-->
+            <!--android:checked="true"/>-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forget Password"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="0dp"
+            android:textColor="@color/colorwhite"
+            android:drawableLeft="@drawable/ic_lock_open_black_24dp"
+            android:drawablePadding="6dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/sanfranciscodisplay_medium"
+            android:padding="4dp"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_login_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:shadowColor="@android:color/transparent"
+        android:padding="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="0dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/sanfranciscodisplay_medium"
+        android:textAlignment="center"
+        android:textColor="@color/colorwhite"
+        android:background="@drawable/shapelogin"/>
+
+    <TextView
+        android:id="@+id/text_login_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:shadowColor="@android:color/transparent"
+        android:padding="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/sanfranciscodisplay_medium"
+        android:textAlignment="center"
+        android:background="@drawable/shapesignup"
+        android:textColor="@color/colorblue"/>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

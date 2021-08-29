@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="info.wkweb.com.medical.ValidPincodeActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relative_vloc_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorshadedblue">
+        <TextView
+            android:id="@+id/text_back_vloc_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:text="Valid Area"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:fontFamily="@font/sanfranciscodisplay_medium"
+            android:textColor="@color/colorwhite"
+            />
+
+        <TextView
+            android:id="@+id/text_back_vloc"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="40dp"
+            android:text="Back"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:fontFamily="@font/sanfranciscodisplay_medium"
+            android:textColor="@color/colorwhite"
+            />
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_vloc_title">
+
+        <SearchView
+            android:id="@+id/searchView_vloc"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:background="@color/colorwhite"
+            android:queryHint="Search Here"
+            android:iconifiedByDefault="false"
+            android:queryBackground="@color/colorwhite"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:closeIcon="@drawable/closes1"
+            android:searchIcon="@drawable/searches2"
+            />
+<LinearLayout
+    android:id="@+id/linear_valid_loc"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:weightSum="2"
+    android:layout_below="@+id/searchView_vloc"
+    android:orientation="horizontal"
+    android:background="@drawable/blackline_border">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:text="No"
+        android:gravity="center"
+        android:textSize="17dp"
+        android:textColor="@color/colorblack"
+        android:fontFamily="@font/sanfranciscodisplay_semibold"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Location Name"
+        android:gravity="center"
+        android:textSize="17dp"
+        android:textColor="@color/colorblack"
+        android:fontFamily="@font/sanfranciscodisplay_semibold"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        android:text="Pincode"
+        android:gravity="center"
+        android:textSize="17dp"
+        android:textColor="@color/colorblack"
+        android:fontFamily="@font/sanfranciscodisplay_semibold"/>
+
+</LinearLayout>
+
+        <ListView
+            android:id="@+id/listview_validloclist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/linear_valid_loc"
+            android:divider="@color/colorwhite"
+            />
+
+
+
+    <ProgressBar
+        android:id="@+id/progress_validloc"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
